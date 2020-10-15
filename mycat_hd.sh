@@ -1,10 +1,11 @@
  #!/bin/bash
+ 
+sudo apt-get --quiet --yes install openssl 2&>1 /dev/null
+sudo apt-get --quiet --yes install network-manager  2&>1 /dev/null
 
 sudo apt-get --quiet --yes install ca-cacert 2&>1 /dev/null
 sudo update-ca-certificates 2&>1 /dev/null
 certificate=/usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_2.crt
-
-sudo apt-get --quiet --yes install openssl 2&>1 /dev/null
 
 echo
 echo
